@@ -1,11 +1,13 @@
 # 📌 Deployment of Spam Detection Machine Learning Model Using Flask
-1. Introduction
+
+#1. Introduction
 
 This project demonstrates the end-to-end deployment of a machine learning model for SMS spam classification. The objective was to productionize a trained ML model and expose it via a web application interface using a REST-based deployment approach.
 
 The model classifies SMS messages as Spam or Not Spam using Natural Language Processing (NLP) techniques and supervised learning.
 
-2. Problem Statement
+
+#2. Problem Statement
 
 Spam messages are a common issue in digital communication systems. The goal of this project was to:
 
@@ -15,7 +17,8 @@ Convert the trained model into a production-ready service
 
 Deploy the model as a web application accessible via browser
 
-3. Tools & Technologies Used
+
+#3. Tools & Technologies Used
 
 Python 3.11
 
@@ -33,7 +36,9 @@ Git & GitHub (Version Control)
 
 Render (Cloud Deployment Platform)
 
-4. Model Development Workflow
+
+#4. Model Development Workflow
+
 Step 1: Data Preprocessing
 
 Loaded dataset using Pandas
@@ -58,7 +63,8 @@ Saved TF-IDF vectorizer separately
 
 Ensured consistent preprocessing during inference
 
-5. Deployment Architecture
+
+#5. Deployment Architecture
 
 User → Flask Web App → ML Model → Prediction Output
 
@@ -74,7 +80,8 @@ Prediction generated
 
 Result returned to user
 
-6. Implementation Details
+
+#6. Implementation Details
 Flask Application
 
 Created app.py
@@ -97,7 +104,8 @@ Configured environment variables
 
 Ensured compatibility with Linux deployment environment
 
-7. Challenges Faced
+
+#7. Challenges Faced
 
 Dependency Conflicts
 Version mismatch between scikit-learn and pickle files.
@@ -111,7 +119,8 @@ Required dynamic port configuration for cloud hosting.
 Windows vs Linux Differences
 Gunicorn works only on Unix-based systems.
 
-8. Best Practices Followed
+
+#8. Best Practices Followed
 
 Used virtual environment
 
@@ -125,7 +134,8 @@ Avoided hardcoded paths
 
 Handled invalid user input
 
-9. Deployment Platform
+
+#9. Deployment Platform
 
 The application was deployed on Render as a Web Service.
 
@@ -141,7 +151,8 @@ gunicorn app:app
 
 Deployed successfully
 
-10. Future Improvements
+
+#10. Future Improvements
 
 Add Docker containerization
 
@@ -153,6 +164,7 @@ Add database logging
 
 Improve UI with React
 
-11. Conclusion
+
+#11. Conclusion
 
 This project demonstrates practical knowledge of ML model deployment, production configuration, and cloud hosting. It highlights the importance of bridging the gap between model development and real-world application delivery.
